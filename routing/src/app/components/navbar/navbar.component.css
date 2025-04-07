@@ -1,0 +1,8 @@
+.spacer {
+  flex: 1 1 auto; /* Makes the element take up remaining space in a flex container */
+}
+
+.select-form {
+margin-top: 10px; /* Pushes the element down slightly */
+margin: 20px; /* This actually overrides the margin-top above */
+}

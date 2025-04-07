@@ -1,0 +1,8 @@
+<div>
+    <h1>Lifecycle Hooks Demo</h1>
+    <p>Counter: {{ counter }}</p>
+    <input [(ngModel)]="inputValue" (ngModelChange)="onInputChange($event)" placeholder="Type something">
+    <button (click)="increment()">Increment</button>
+</div>
+
+<router-outlet />

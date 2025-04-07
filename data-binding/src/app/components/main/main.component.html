@@ -1,0 +1,31 @@
+<section>
+  <h1>Avengers</h1>
+  <div class="avengers">
+    @for (avenger of avengers; track $index) { @if (avenger.isHeroActive) {
+    <div class="avenger-card">
+      <!-- h2 tag represents data coming from ts file using String Interpolation -->
+      <h2 class="avenger-title">{{ avenger.title }}</h2>
+      <!-- img tag hadd properties those content comes from ts file by using property binding -->
+      <img class="avenger-image" [src]="avenger.imgUrl" [alt]="avenger.title" />
+      <!-- h3 represented using String Interpolation -->
+      <h3 class="avenger-quote">{{ avenger.heroQuote }}</h3>
+      <!-- input tag contains data and can send that data to ts component by using Two-Way Binding -->
+      <input
+        type="text"
+        [(ngModel)]="avenger.heroQuote"
+        [hidden]="avenger.hideBar"
+      />
+      <!-- buttons had click events, done by using the event binding -->
+      <button class="btn" (click)="showInputBar(avenger)">Edit Quote</button>
+      <button class="btn btn-danger" (click)="updateAvengerStatus(avenger)">
+        Hide {{ avenger.title }}
+      </button>
+    </div>
+    } @else {
+    <!-- button had click events, done by using the event binding -->
+    <button class="btn" (click)="updateAvengerStatus(avenger)">
+      Show {{ avenger.title }}
+    </button>
+    } }
+  </div>
+</section>

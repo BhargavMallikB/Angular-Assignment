@@ -1,0 +1,18 @@
+.card{
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+  height: 100%;            /* Ensure it takes full height of the component */
+  width: 100%;             /* Ensure it takes full width of the component */
+}
+.example-card {
+  width: 100%; /* Make it responsive */
+  max-width: 300px;
+  margin: 0; /* Remove direct margin and rely on gap */
+  flex: 1 1 calc(33.33% - 10px); /* Three cards per row with gap considered */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+img{
+  height: 300px;
+}

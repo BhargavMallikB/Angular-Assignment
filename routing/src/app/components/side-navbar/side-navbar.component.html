@@ -1,0 +1,19 @@
+<mat-sidenav-container class="sidenav">
+  <!-- Sidebar navigation menu -->
+  <mat-sidenav mode="side" opened>
+    <!-- Home link with icon -->
+    <a routerLink="/" mat-button>
+      <mat-icon>home</mat-icon> Home
+    </a>
+
+    <!-- Products link with icon -->
+    <a routerLink="/products" mat-button>
+      <mat-icon>inventory</mat-icon> Products
+    </a>
+  </mat-sidenav>
+
+  <!-- Main content area where routed components will be displayed -->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

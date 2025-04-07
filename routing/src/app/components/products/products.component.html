@@ -1,0 +1,39 @@
+<div class="product-cards">
+  <!-- Looping through paginated products and displaying each one inside a card -->
+  @for (product of paginatedProducts; track product.id) {
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <!-- Product name and category as the title and subtitle -->
+        <mat-card-title>{{ product.name }}</mat-card-title>
+        <mat-card-subtitle>{{ product.category }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <!-- Product image -->
+      <img mat-card-image [src]="product.image" [alt]="product.name" />
+
+      <mat-card-content>
+        <!-- Short product description -->
+        <p>{{ product.description }}</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <!-- Button to navigate to product details page -->
+        <button mat-fab extended [routerLink]="['/products/product-details', product.id]">
+          <mat-icon>visibility</mat-icon>
+          View Details
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  }
+</div>
+
+<!-- This will render the child routes dynamically -->
+<router-outlet></router-outlet>
+<mat-paginator
+  [length]="products.length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="[5, 10, 25, 100]"
+  showFirstLastButtons
+  (page)="onPageChange($event)"
+  aria-label="Select page"
+></mat-paginator>

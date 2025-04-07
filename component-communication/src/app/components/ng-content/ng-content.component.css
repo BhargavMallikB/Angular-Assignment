@@ -1,0 +1,7 @@
+h1{
+    text-align: center; /* aligns h1 text in the middle of the component */
+}
+
+.parent{
+    background-color: beige; /* parent div background-color sets as beige color */
+}

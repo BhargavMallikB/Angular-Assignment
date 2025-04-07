@@ -1,0 +1,10 @@
+/* Styling the footer to fix in the bottom and higlighting text */
+footer{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

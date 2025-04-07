@@ -1,0 +1,89 @@
+.avengers { /* avengers div will be styled below */
+    display: flex; /* setting avengers div display as flex */
+    flex-wrap: wrap; /* wrapping the flex is adjusting content based on available width */
+    gap: 25px; /* gap between avengers div and the component set as 25px */
+    justify-content: center; /* justifying the content of avengers div as center */
+    max-width: 100%; /* avengers div utilizes 100% width of the component */
+    padding: 25px; /* inside avengers div giving gap of 25px */
+    background: linear-gradient(to bottom, #f0f4f8, #ffffff); /* setting avengers backround as linear-gradient */
+  }
+  
+  .avenger-card { /* below styles will be applied to each of the avenger-card */
+    border: none; /* avenger-card border sets as none (no border) */
+    padding: 20px; /* padding will be set as 20px */
+    width: 260px; /* width of each avenger-card div sets as 260px */
+    text-align: center; /* inside text of each avenger-card div sets in the middle of the div */
+    background-color: #fff; /* background-color of the avenger-card set as #fff */
+    border-radius: 10px; /* avenger-card border-radius sets as 10px */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* each avenger-card has box-shadow */
+    transition: transform 0.2s ease; /* transistion set for 0.2 sec */
+  }
+  
+  .avenger-card:hover { /* avenger-card gets hover when coursor is there */
+    transform: translateY(-5px); /* sets hover */
+  }
+  
+  .avenger-img { /* applying to each avenger image */
+    max-width: 100%; /* avenger-image gets maximum width of 100% it has */
+    height: 200px; /* avenger-image height sets as 200px */
+    border-radius: 8px; /* avenger-image border-radius sets as 8px */
+    margin-bottom: 15px; /* avenger-image bottom margin sets as 15px */
+  }
+  
+  .avenger-title { /* applying below styling to every avenger-title */
+    font-size: 1.6em; /* set font size as 1.6em */
+    margin: 0 0 10px; /* margin of each avenger-title */
+    color: #2c3e50; /* avenger-title color sets as #2c3e50 */
+  }
+  
+  .avenger-quote { /* applying below styling to every avenger-quote */
+    font-style: italic; /* avenger-quote font-style sets as italic */
+    color: #7f8c8d; /* avengr-quote text color sets as 37f8c8d */
+    margin: 0 0 15px; /* avenger-quote margin */
+    font-size: 1em; /* avenger-quote text size sets as 1em */
+  }
+  
+  .btn { /* applying below styling for button */
+    padding: 10px 20px; /* button padding sets as 10px & 20px */
+    margin: 5px; /* button margin sets as 5px */
+    border: none; /* border of the button sets as none */
+    border-radius: 5px; /* border-radius of the button sets as 5px */
+    cursor: pointer; /* button cursor sets as pointer */
+    background-color: #ecf0f1; /* background-color of button sets as #ecf0f1 */
+    color: #34495e; /* button text color sets as #34495e */
+    font-weight: 600; /* button font-weight sets as 600 */
+    transition: background-color 0.2s ease; /* sets transition for the button */
+  }
+  
+  .btn:hover { /* appyling hover for the button*/
+    background-color: #0aef71; /* sets background-color of button as #0aef71 when button hovers */
+  }
+  
+  .btn-danger { /* applying danger styling for buttons */
+    background-color: #e74c3c; /* background-color sets as #e74c3c */
+    color: #fff; /* button text color sets as #fff */
+  }
+  
+  .btn-danger:hover { /* applying hover styling for danger buttons */
+    background-color: #c0392b; /* background-color sets as #c0392b when button hovers */
+  }
+
+  .show-avenger { /* applying styling for show-avenger buttons div */
+    display: flex; /* button as displayed as flex */
+    justify-content: center; /* these buttons are justified to render in middle of component */
+    align-items: center; /* algning them in middle */
+    width: 260px; /* Matches avenger-card width */
+    min-height: 100px; /* Gives some vertical space */
+    background-color: #ecf0f1; /* sets background-color as #ecf0f1 */
+    border-radius: 10px; /* sets border-radius as 10px */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* apllying box-shadow for the buttons */
+  }
+  
+  .show-btn { /* applying below styling for the button */
+    background-color: #3498db; /* sets button background-color as #3498db */
+    color: #fff; /* sets button text color as #fff */
+  }
+  
+  .show-btn:hover { /* applying the hover styling for button */
+    background-color: #2980b9; /* changes background-color of button as #2980b9 when hovers */
+  }

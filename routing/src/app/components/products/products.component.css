@@ -1,0 +1,42 @@
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Reduced from 10px */
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.example-card {
+  width: 100%;
+  max-width: 200px; /* Reduced from 300px */
+  flex: 1 1 calc(33.33% - 5px); /* Three per row, adjusted for 5px gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px; /* Compact padding */
+}
+
+img[mat-card-image] {
+  height: 150px; /* Reduced from 250px */
+  object-fit: cover; /* Ensure image fits */
+}
+
+mat-card-header {
+  padding: 8px; /* Reduce header padding */
+}
+
+mat-card-content {
+  padding: 8px; /* Reduce content padding */
+}
+
+mat-card-content p {
+  margin: 4px 0; /* Tighten text spacing */
+  font-size: 14px; /* Smaller text */
+}
+
+mat-card-actions {
+  padding: 8px; /* Reduce actions padding */
+}
+
+mat-card-actions button[mat-fab] {
+  padding: 0 8px; /* Smaller button */
+  font-size: 12px; /* Smaller text */
+}

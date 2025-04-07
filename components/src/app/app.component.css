@@ -1,0 +1,7 @@
+/* CSS to body to organize the elements inside */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+

@@ -1,0 +1,7 @@
+h1{
+    text-align: center; /* h1 text aligned in the middle */
+}
+
+.child{
+    background-color: azure; /* child div backgound-color sets as azure */
+}

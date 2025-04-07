@@ -1,0 +1,61 @@
+/* Style for the main heading (h1) */
+h1 {
+    background-color: black; 
+    text-align: center; 
+    color: aliceblue; 
+}
+
+/* Style for the container holding the avenger cards */
+.avengers {
+    background: whitesmoke; 
+    padding: 20px; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+}
+
+/* Style for the title inside each avenger card */
+.avenger-title {
+    text-align: center; 
+    color: black; 
+}
+
+/* Style for individual avenger cards */
+.avenger-card {
+    background: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 15px; 
+    width: 200px; 
+}
+
+/* Style for the avenger image inside the card */
+.avenger-image {
+    width: 200px; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+/* Style for the avenger's quote */
+.avenger-quote {
+    text-align: center; 
+    color: black; 
+}
+
+/* Style for the generic button */
+.btn {
+    background-color: blue; 
+    color: azure; 
+    border: none; 
+    padding: 8px; 
+    margin: 6px; 
+    cursor: pointer; 
+    align-self: center; 
+}
+
+/* Style for the danger button */
+.btn-danger {
+    background-color: red; 
+}
