@@ -17,6 +17,7 @@ Each folder in the root of this repository is a **separate Angular project** wit
 ├── data-binding/
 ├── forms/
 ├── routing/
+|---lifeCycleHooks/
 └── README.md
 ```
 
