@@ -27,7 +27,7 @@ Each folder in the root of this repository is a **separate Angular project** wit
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/angular-assignment.git
-   cd angular-projects-collection
+   cd angular-assignment
    ```
 
 2. **Navigate to a specific project:**
