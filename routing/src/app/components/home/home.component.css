@@ -1,0 +1,23 @@
+h1{
+  text-align: center; /* aligns text in center */
+}
+
+.topics{
+  display: flex; /* setting display as flex */
+  flex-wrap: wrap; /* wrapping the flex is adjusting content based on available width */
+  gap: 25px; /* gap between div and the component set as 25px */
+  justify-content: center; /* justifying the content of div as center */
+  max-width: 100%; /* div utilizes 100% width of the component */
+  padding: 25px; /* inside div giving gap of 25px */
+}
+
+h3{
+  border: none; /*  border sets as none (no border) */
+  padding: 20px; /* padding will be set as 20px */
+  width: 260px; /* width sets as 260px */
+  text-align: center; /* inside text sets in the middle of the div */
+  background-color: #fff; /* background-color set as #fff */
+  border-radius: 10px; /* border-radius sets as 10px */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* has box-shadow */
+  transition: transform 0.2s ease; /* transistion set for 0.2 sec */
+}

@@ -1,0 +1,23 @@
+<!-- avengers div has all hero cards renders on the service component -->
+<div class="avengers">
+  <!-- @for loop through avengers and renders each avenger as an card -->
+  @for (avenger of avengers; track $index) {
+  <!-- @if checks whether that particular avenger status is active then renders the data -->
+  @if (avenger.isActive) {
+  <div class="avenger-card">
+    <h2 class="avenger-title">{{ avenger.title }}</h2>
+    <img class="avenger-img" [src]="avenger.imageURL" [alt]="avenger.title" />
+    <h4 class="avenger-quote">{{ avenger.quote }}</h4>
+    <button class="btn btn-danger" (click)="updateAvengersStatus(avenger)">
+      Hide {{ avenger.title }}
+    </button>
+  </div>
+  <!-- @else renders a button to activate the avenger to render data when avenger status is not active -->
+  } @else {
+  <div class="show-avenger">
+    <button class="btn show-btn" (click)="updateAvengersStatus(avenger)">
+      Show {{ avenger.title }}
+    </button>
+  </div>
+  } }
+</div>

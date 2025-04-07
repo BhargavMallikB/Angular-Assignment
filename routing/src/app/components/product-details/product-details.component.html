@@ -1,0 +1,22 @@
+<div class="card">
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <!-- Display product name as the card title -->
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <!-- Display product category as the subtitle -->
+      <mat-card-subtitle>{{ product.category }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <!-- Product image -->
+    <img mat-card-image [src]="product.image" [alt]="product.name" />
+
+    <mat-card-content>
+      <!-- Product description -->
+      <p>{{ product.description }}</p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <!-- Actions can be added here, such as buttons for "Add to Cart" or "View Details" -->
+    </mat-card-actions>
+  </mat-card>
+</div>

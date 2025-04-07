@@ -1,0 +1,12 @@
+<div class="child">
+  <!-- h1 text is rendered in the top of the component -->
+  <h1>This is Child Component</h1>
+  <!-- section renders the data coming from Input Component, Using @for loop through and renders in each line -->
+  <section>
+    @for (name of names; track $index) {
+    <h3>{{ name }}</h3>
+    }
+  </section>
+  <!-- ng-content renders the data that comes from Parent Component -->
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,13 @@
+.sidenav {
+  position: absolute; /* Positions the sidenav relative to its parent */
+  top: 60px; /* Starts below the toolbar/header */
+  bottom: 0; /* Extends to the bottom of the viewport */
+  left: 0; /* Aligns to the left */
+  right: 0; /* Expands to the right (likely for full-width behavior) */
+  background: #eee; /* Light gray background for a subtle contrast */
+}
+
+mat-sidenav {
+  width: 200px; /* Sets a fixed width for the sidenav */
+  padding: 20px; /* Adds spacing inside the sidenav */
+}

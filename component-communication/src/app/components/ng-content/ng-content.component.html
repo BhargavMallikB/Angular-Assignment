@@ -1,0 +1,24 @@
+<div class="parent">
+    <!-- h1 text renders in top of the component -->
+    <h1>This is Parent Child</h1>
+    <!-- inside app-child template code will present, It renders in the child component -->
+    <app-child>
+        <!-- In the table heroes data is rendered -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quote</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (hero of heroes; track $index) {
+                    <tr>
+                        <td>{{ hero.title }}</td>
+                        <td>{{ hero.quote }}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </app-child>
+</div>

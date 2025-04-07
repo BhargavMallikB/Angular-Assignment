@@ -1,0 +1,65 @@
+<div class="form">
+  <div>
+    <h4>Form</h4>
+  </div>
+
+  <div class="profile-form">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <div><label for="firstName">FirstName: </label></div>
+      <div>
+        <input type="text" id="firstName" formControlName="firstName" />
+      </div>
+
+      @if (profileForm.invalid && profileForm.get('firstName')?.touched) {
+      <div>Provide Fisrt Name</div>
+      }
+
+      <div>
+        <label for="lastName">LastName: </label>
+      </div>
+
+      <div>
+        <input type="text" id="lastName" formControlName="lastName" />
+      </div>
+
+      <div>
+        <label for="age">Age: </label>
+      </div>
+
+      <div>
+        <input type="text" id="age" formControlName="age" />
+      </div>
+
+      <div formGroupName="address">
+        <div><label for="street">Street: </label></div>
+        <div><input type="text" id="street" formControlName="street" /></div>
+
+        <div><label for="city">City: </label></div>
+        <div><input type="text" id="city" formControlName="city" /></div>
+
+        <div><label for="state">State: </label></div>
+        <div><input type="text" id="state" formControlName="state" /></div>
+
+        <div><label for="zip">Zip: </label></div>
+        <div><input type="text" id="zip" formControlName="zip" /></div>
+      </div>
+
+      <div formArrayName="aliases">
+        <h3>Aliases</h3>
+        <button (click)="addAliases()" type="button">Add Aliases</button>
+
+        @for (aliase of aliases.controls; track $index; let i = $index) {
+            <div>
+                <label for="aliase">Aliase: </label>
+                <input type="text" id="aliase" [formControlName]="i">
+            </div>
+        }
+      </div>
+
+      <div>
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</div>

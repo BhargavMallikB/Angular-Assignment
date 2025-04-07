@@ -1,0 +1,13 @@
+<div class="parent">
+  <!-- h1 represents the data in the top of the component -->
+  <h1>This is Parent Component</h1> 
+  <!-- app-child tag had event called hQuotes it retreives data and stores in quotes variable -->
+  <app-child (hQuotes)="quotes = $event"></app-child>
+  <!-- section has code for the quotes data to render in component -->
+  <section>
+    <!-- @for loop through and renders the quotes in each line a quote -->
+    @for (quote of quotes; track $index) {
+    <h4>{{ quote }}</h4>
+    }
+  </section>
+</div>

@@ -1,0 +1,12 @@
+<div class="parent">
+    <!-- h1 text renders on the top of the component -->
+    <h1>This is Parent Component</h1>
+    <!-- section has images that is extracted from the child component -->
+    <section>
+        <!-- @for loop through images variable and renders each image in template -->
+        @for (image of images; track $index) {
+            <img src="{{image}}" alt="">
+        }
+    </section>
+    <app-child></app-child>
+</div>

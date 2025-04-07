@@ -1,0 +1,14 @@
+h4{
+    text-align: center;
+}
+
+.button{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-form{
+    display: flex;
+    justify-content: center;
+}

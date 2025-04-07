@@ -1,0 +1,34 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+  <!-- Home button with a route icon, clicking it navigates to the home page -->
+  <button mat-icon-button routerLink="/">
+      <mat-icon>route</mat-icon>
+  </button>
+
+  <!-- Title for the toolbar -->
+  <span>Routing</span>
+
+  <!-- Spacer to push elements to the right -->
+  <div class="spacer"></div>
+
+  <!-- This section only shows when the user is logged in -->
+  <div [hidden]="!isLoggedIn">
+      <mat-form-field class="select-form">
+          <mat-label>Category</mat-label>
+          <mat-select [(value)]="selected" (valueChange)="onChange()">
+            <!-- Looping through categories using Angular’s @for directive -->
+            @for (category of categories; track $index) {
+              <mat-option value="{{category}}">{{ category }}</mat-option>
+            }
+          </mat-select>
+      </mat-form-field> 
+  </div>     
+
+  <!-- Login button (hidden if already logged in) -->
+  <button mat-raised-button (click)="onLogIn()" [hidden]="isLoggedIn">Login</button>
+
+  <!-- Logout button (only visible when logged in) -->
+  <button mat-raised-button (click)="onLogOut()" [hidden]="!isLoggedIn">Logout</button>
+</mat-toolbar>
+
+<!-- Sidebar navigation component -->
+<app-side-navbar></app-side-navbar>

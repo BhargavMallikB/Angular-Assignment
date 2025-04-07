@@ -1,0 +1,16 @@
+/* Applying CSS to content inside the header and representing it to top of the website */
+header{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* CSS to the nav links */
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 10px;
+}

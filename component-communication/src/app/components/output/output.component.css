@@ -1,0 +1,7 @@
+h1{ 
+    text-align: center; /* h1 text aligns in the center */
+}
+
+.parent{ 
+    background-color: beige; /* the whole parent div has background-color sets as beige color */
+}
